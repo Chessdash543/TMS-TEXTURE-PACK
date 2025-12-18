@@ -11,11 +11,11 @@
 				<key>spriteOffset</key>
 				<string>{0,0}</string>
 				<key>spriteSize</key>
-				<string>{360,96}</string>
+				<string>{180,48}</string>
 				<key>spriteSourceSize</key>
-				<string>{360,96}</string>
+				<string>{180,48}</string>
 				<key>textureRect</key>
-				<string>{{735,175},{360,96}}</string>
+				<string>{{370,94},{180,48}}</string>
 				<key>textureRotated</key>
 				<false/>
 			</dict>
@@ -26,11 +26,11 @@
 				<key>spriteOffset</key>
 				<string>{0,0}</string>
 				<key>spriteSize</key>
-				<string>{360,95}</string>
+				<string>{180,47}</string>
 				<key>spriteSourceSize</key>
-				<string>{360,95}</string>
+				<string>{180,47}</string>
 				<key>textureRect</key>
-				<string>{{1096,175},{360,95}}</string>
+				<string>{{551,94},{180,47}}</string>
 				<key>textureRotated</key>
 				<false/>
 			</dict>
@@ -39,28 +39,28 @@
 				<key>aliases</key>
 				<array/>
 				<key>spriteOffset</key>
-				<string>{3,-4}</string>
+				<string>{0,-0.5}</string>
 				<key>spriteSize</key>
-				<string>{354,116}</string>
+				<string>{180,61}</string>
 				<key>spriteSourceSize</key>
-				<string>{360,124}</string>
+				<string>{180,62}</string>
 				<key>textureRect</key>
-				<string>{{529,471},{354,116}}</string>
+				<string>{{596,142},{180,61}}</string>
 				<key>textureRotated</key>
-				<false/>
+				<true/>
 			</dict>
 			<key>GJ_logo_001.png</key>
 			<dict>
 				<key>aliases</key>
 				<array/>
 				<key>spriteOffset</key>
-				<string>{0,-1}</string>
+				<string>{0,-0.5}</string>
 				<key>spriteSize</key>
-				<string>{1674,174}</string>
+				<string>{842,93}</string>
 				<key>spriteSourceSize</key>
-				<string>{1716,208}</string>
+				<string>{858,104}</string>
 				<key>textureRect</key>
-				<string>{{0,0},{1674,174}}</string>
+				<string>{{0,0},{842,93}}</string>
 				<key>textureRotated</key>
 				<false/>
 			</dict>
@@ -69,13 +69,13 @@
 				<key>aliases</key>
 				<array/>
 				<key>spriteOffset</key>
-				<string>{7,-7.5}</string>
+				<string>{2.5,-2.5}</string>
 				<key>spriteSize</key>
-				<string>{734,139}</string>
+				<string>{369,72}</string>
 				<key>spriteSourceSize</key>
-				<string>{748,154}</string>
+				<string>{374,77}</string>
 				<key>textureRect</key>
-				<string>{{0,175},{734,139}}</string>
+				<string>{{0,94},{369,72}}</string>
 				<key>textureRotated</key>
 				<false/>
 			</dict>
@@ -84,13 +84,13 @@
 				<key>aliases</key>
 				<array/>
 				<key>spriteOffset</key>
-				<string>{7.5,-7.5}</string>
+				<string>{2.5,-2.5}</string>
 				<key>spriteSize</key>
-				<string>{647,155}</string>
+				<string>{326,80}</string>
 				<key>spriteSourceSize</key>
-				<string>{662,170}</string>
+				<string>{331,85}</string>
 				<key>textureRect</key>
-				<string>{{0,315},{647,155}}</string>
+				<string>{{0,167},{326,80}}</string>
 				<key>textureRotated</key>
 				<false/>
 			</dict>
@@ -99,13 +99,13 @@
 				<key>aliases</key>
 				<array/>
 				<key>spriteOffset</key>
-				<string>{7.5,-7}</string>
+				<string>{2.5,-2.5}</string>
 				<key>spriteSize</key>
-				<string>{532,154}</string>
+				<string>{268,79}</string>
 				<key>spriteSourceSize</key>
-				<string>{547,168}</string>
+				<string>{273,84}</string>
 				<key>textureRect</key>
-				<string>{{648,315},{532,154}}</string>
+				<string>{{327,167},{268,79}}</string>
 				<key>textureRotated</key>
 				<false/>
 			</dict>
@@ -116,11 +116,11 @@
 				<key>spriteOffset</key>
 				<string>{0,0}</string>
 				<key>spriteSize</key>
-				<string>{528,148}</string>
+				<string>{268,79}</string>
 				<key>spriteSourceSize</key>
-				<string>{592,222}</string>
+				<string>{296,111}</string>
 				<key>textureRect</key>
-				<string>{{0,471},{528,148}}</string>
+				<string>{{0,248},{268,79}}</string>
 				<key>textureRotated</key>
 				<false/>
 			</dict>
@@ -134,11 +134,11 @@
 			<key>premultiplyAlpha</key>
 			<false/>
 			<key>realTextureFileName</key>
-			<string>GJ_LaunchSheet-uhd.png</string>
+			<string>GJ_LaunchSheet-hd.png</string>
 			<key>size</key>
-			<string>{1674,619}</string>
+			<string>{842,327}</string>
 			<key>textureFileName</key>
-			<string>GJ_LaunchSheet-uhd.png</string>
+			<string>GJ_LaunchSheet-hd.png</string>
 		</dict>
 	</dict>
 </plist>
