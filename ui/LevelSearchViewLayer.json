@@ -1,0 +1,25 @@
+{
+    "children": {
+        "node": {
+            "cvolton.betterinfo/background": {
+                "attributes": {
+                    "sprite": "GJ_gradientBG.png",
+                    "color": {
+                        "r": 255,
+                        "g": 255,
+                        "b": 255
+                    },
+                    "scale": {
+                        "fit": {
+                            "relative": "screen",
+                            "multiplier": 1.2
+                        }
+                    },
+                    "position": {
+                        "anchor": "bottom-left"
+                    }
+                }
+            }
+        }
+    }
+}

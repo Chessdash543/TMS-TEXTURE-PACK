@@ -1,0 +1,1100 @@
+{
+    "children": {
+        "node": {
+            "main-title": {
+                "attributes": {
+                    "visible": false
+                }
+            },
+            "more-games-menu": {
+                "attributes": {
+                    "visible": false
+                }
+            },
+            "social-media-menu": {
+                "attributes": {
+                    "visible": false
+                }
+            },
+            "main-menu": {
+                "attributes": {
+                    "visible": false
+                }
+            },
+            "profile-menu": {
+                "attributes": {
+                    "position": {
+                        "anchor": "top-left",
+                        "x": 80,
+                        "y": -35
+                    }
+                }
+            },
+            "player-username": {
+                "attributes": {
+                    "position": {
+                        "anchor": "top-left",
+                        "x": 110,
+                        "y": -35
+                    },
+                    "scale": 0.6
+                }
+            },
+            "close-menu": {
+                "attributes": {
+                    "position": {
+                        "anchor": "top-right",
+                        "x": -115,
+                        "y": -30
+                    },
+                    "layout": {
+                        "axis-alignment": "end"
+                    }
+                }
+            },
+            "bottom-menu": {
+                "attributes": {
+                    "visible": true,
+                    "position": {
+                        "anchor": "center-left",
+                        "x": 30,
+                        "y": -25
+                    },
+                    "scale": 0.8,
+                    "content-size": {
+                        "width": 65,
+                        "height": 284.5
+                    },
+                    "layout": {
+                        "axis": "column",
+                        "flip-axis": true
+                    },
+                    "update-layout": "self"
+                },
+                "children": {
+                    "node": {
+                        "settings-button": {
+                            "attributes": {
+                                "remove": true
+                            }
+                        }
+                    }
+                }
+            },
+            "right-side-menu": {
+                "attributes": {
+                    "visible": true,
+                    "scale": 0.8,
+                    "position": {
+                        "anchor": "center-right",
+                        "x": -30,
+                        "y": -25
+                    },
+                    "content-size": {
+                        "width": 65,
+                        "height": 284.5
+                    },
+                    "layout": {
+                        "axis": "column"
+                    }
+                }
+            }
+        },
+        "new": [
+            {
+                "type": "CCMenu",
+                "id": "geode-bottom",
+                "attributes": {
+                    "ignore-anchor-pos": false,
+                    "z-order": 1,
+                    "position": {
+                        "anchor": "center",
+                        "x": 0,
+                        "y": 0
+                    }
+                }
+            }
+        ],
+        "move": [
+            {
+                "node": "bottom-menu > geode.loader/geode-button",
+                "parent": "{id}/geode-bottom",
+                "attributes": {
+                    "position": {
+                        "anchor": "bottom-center",
+                        "x": 0,
+                        "y": 25
+                    },
+                    "sprite": "Danz_osu_asset/circle.png",
+                    "scale": 0.6
+                },
+                "children": {
+                    "index": [
+                        {
+                            "type": "CircleButtonSprite",
+                            "attributes": {
+                                "position": {
+                                    "anchor": "center",
+                                    "x": 0,
+                                    "y": 0
+                                },
+                                "visible": true
+                            },
+                            "children": {
+                                "index": [
+                                    {
+                                        "type": "CCSprite",
+                                        "index": 0,
+                                        "attributes": {
+                                            "visible": false
+                                        }
+                                    }
+                                ],
+                                "node": {
+                                    "updates-available": {
+                                        "attributes": {
+                                            "position": {
+                                                "anchor": "center",
+                                                "x": 12,
+                                                "y": 14
+                                            },
+                                            "scale": 0.4
+                                        }
+                                    },
+                                    "errors-found": {
+                                        "attributes": {
+                                            "position": {
+                                                "anchor": "center",
+                                                "x": 12,
+                                                "y": 14
+                                            },
+                                            "scale": 0.4
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "new": [
+                        {
+                            "type": "CCSprite",
+                            "id": "geode-sprite",
+                            "attributes": {
+                                "sprite": "Danz_osu_asset/geode_logo.png",
+                                "position": {
+                                    "anchor": "center",
+                                    "x": 0,
+                                    "y": 0
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "after-transition": {
+        "children": {
+            "new": [
+                {
+                    "type": "CCMenu",
+                    "id": "osu-main",
+                    "attributes": {
+                        "ignore-anchor-pos": false,
+                        "z-order": 1,
+                        "content-size": {
+                            "width": 316,
+                            "height": 188
+                        },
+                        "position": {
+                            "anchor": "center",
+                            "x": 0,
+                            "y": 0
+                        }
+                    },
+                    "children": {
+                        "new": [
+                            {
+                                "type": "CCMenu",
+                                "id": "osu-play",
+                                "attributes": {
+                                    "ignore-anchor-pos": false,
+                                    "z-order": 1,
+                                    "position": {
+                                        "anchor": "center",
+                                        "x": 0,
+                                        "y": 0
+                                    },
+                                    "content-size": {
+                                        "width": 316,
+                                        "height": 188
+                                    }
+                                },
+                                "children": {
+                                    "new": [
+                                        {
+                                            "type": "CCMenu",
+                                            "id": "osu-menu",
+                                            "attributes": {
+                                                "ignore-anchor-pos": false,
+                                                "z-order": 2,
+                                                "content-size": {
+                                                    "width": 200,
+                                                    "height": 188
+                                                },
+                                                "position": {
+                                                    "anchor": "center",
+                                                    "x": 0,
+                                                    "y": 0
+                                                },
+                                                "visible": false
+                                            },
+                                            "children": {
+                                                "new": [
+                                                    {
+                                                        "type": "CCMenuItemSpriteExtra",
+                                                        "id": "osu-main1",
+                                                        "attributes": {
+                                                            "sprite": "Danz_osu_asset/ui_button1.png",
+                                                            "position": {
+                                                                "anchor": "center",
+                                                                "x": 0,
+                                                                "y": 30
+                                                            }
+                                                        },
+                                                        "children": {
+                                                            "new": [
+                                                                {
+                                                                    "type": "CCLabelBMFont",
+                                                                    "id": "osu-play-label",
+                                                                    "attributes": {
+                                                                        "font": "gjFont59.fnt",
+                                                                        "text": "Play",
+                                                                        "scale": 0.4,
+                                                                        "position": {
+                                                                            "anchor": "center",
+                                                                            "x": -27.5,
+                                                                            "y": 0
+                                                                        }
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "type": "CCSprite",
+                                                                    "id": "osu-play-icon",
+                                                                    "attributes": {
+                                                                        "sprite-frame": "edit_upBtn_001.png",
+                                                                        "scale": 0.8,
+                                                                        "position": {
+                                                                            "anchor": "center-right",
+                                                                            "x": -35,
+                                                                            "y": 0
+                                                                        },
+                                                                        "rotation": 90
+                                                                    }
+                                                                }
+                                                            ]
+                                                        },
+                                                        "event": {
+                                                            "on-activate": {
+                                                                "attributes": {
+                                                                    "sound": "Danz_asset/sfx/menuhit.ogg",
+                                                                    "callback": {
+                                                                        "class": "MenuLayer",
+                                                                        "method": "onCreator"
+                                                                    }
+                                                                },
+                                                                "parent": {
+                                                                    "children": {
+                                                                        "node": {
+                                                                            "osu-play-menu": {
+                                                                                "attributes": {
+                                                                                    "visible": true,
+                                                                                    "position": {
+                                                                                        "anchor": "center",
+                                                                                        "x": -10,
+                                                                                        "y": 0
+                                                                                    },
+                                                                                    "actions": [
+                                                                                        {
+                                                                                            "type": "FadeIn",
+                                                                                            "duration": 0.2
+                                                                                        },
+                                                                                        {
+                                                                                            "type": "MoveBy",
+                                                                                            "duration": 0.1,
+                                                                                            "value": {
+                                                                                                "x": 10,
+                                                                                                "y": 0
+                                                                                            }
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            "on-hover": {
+                                                                "attributes": {
+                                                                    "sprite": "Danz_osu_asset/ui_button1_hover.png",
+                                                                    "sound": "Danz_asset/sfx/menuhover.ogg",
+                                                                    "actions": [
+                                                                        {
+                                                                            "type": "Sequence",
+                                                                            "actions": [
+                                                                                {
+                                                                                    "type": "MoveBy",
+                                                                                    "duration": 0.2,
+                                                                                    "value": {
+                                                                                        "x": 8,
+                                                                                        "y": 0
+                                                                                    },
+                                                                                    "easing": "BackOut"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            "on-exit": {
+                                                                "attributes": {
+                                                                    "sprite": "Danz_osu_asset/ui_button1.png",
+                                                                    "actions": [
+                                                                        {
+                                                                            "type": "MoveBy",
+                                                                            "duration": 0.1,
+                                                                            "value": {
+                                                                                "x": -8,
+                                                                                "y": 0
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    {
+                                                        "type": "CCMenuItemSpriteExtra",
+                                                        "id": "osu-main2",
+                                                        "attributes": {
+                                                            "sprite": "Danz_osu_asset/ui_button2.png",
+                                                            "position": {
+                                                                "anchor": "center",
+                                                                "x": 0,
+                                                                "y": -30
+                                                            }
+                                                        },
+                                                        "children": {
+                                                            "new": [
+                                                                {
+                                                                    "type": "CCLabelBMFont",
+                                                                    "id": "osu-edit-label",
+                                                                    "attributes": {
+                                                                        "font": "gjFont59.fnt",
+                                                                        "text": "Editor",
+                                                                        "scale": 0.4,
+                                                                        "position": {
+                                                                            "anchor": "center",
+                                                                            "x": -27.5,
+                                                                            "y": 0
+                                                                        }
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "type": "CCSprite",
+                                                                    "id": "osu-edit-icon",
+                                                                    "attributes": {
+                                                                        "sprite": "Danz_osu_asset/creator_point.png",
+                                                                        "scale": 0.4,
+                                                                        "position": {
+                                                                            "anchor": "center-right",
+                                                                            "x": -40,
+                                                                            "y": 0
+                                                                        }
+                                                                    }
+                                                                }
+                                                            ]
+                                                        },
+                                                        "event": {
+                                                            "on-activate": {
+                                                                "attributes": {
+                                                                    "sound": "Danz_asset/sfx/menuhit.ogg",
+                                                                    "callback": {
+                                                                        "class": "CreatorLayer",
+                                                                        "method": "onMyLevels"
+                                                                    }
+                                                                }
+                                                            },
+                                                            "on-hover": {
+                                                                "attributes": {
+                                                                    "sprite": "Danz_osu_asset/ui_button2_hover.png",
+                                                                    "sound": "Danz_asset/sfx/menuhover.ogg",
+                                                                    "actions": [
+                                                                        {
+                                                                            "type": "Sequence",
+                                                                            "actions": [
+                                                                                {
+                                                                                    "type": "MoveBy",
+                                                                                    "duration": 0.2,
+                                                                                    "value": {
+                                                                                        "x": 8,
+                                                                                        "y": 0
+                                                                                    },
+                                                                                    "easing": "BackOut"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            "on-exit": {
+                                                                "attributes": {
+                                                                    "sprite": "Danz_osu_asset/ui_button2.png",
+                                                                    "actions": [
+                                                                        {
+                                                                            "type": "MoveBy",
+                                                                            "duration": 0.1,
+                                                                            "value": {
+                                                                                "x": -8,
+                                                                                "y": 0
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    {
+                                                        "type": "CCMenuItemSpriteExtra",
+                                                        "id": "osu-main3",
+                                                        "attributes": {
+                                                            "sprite": "Danz_osu_asset/ui_button2.png",
+                                                            "position": {
+                                                                "anchor": "center",
+                                                                "x": 0,
+                                                                "y": 30
+                                                            },
+                                                            "rotation": {
+                                                                "x": 180,
+                                                                "y": 0
+                                                            }
+                                                        },
+                                                        "children": {
+                                                            "new": [
+                                                                {
+                                                                    "type": "CCLabelBMFont",
+                                                                    "id": "osu-Other-label",
+                                                                    "attributes": {
+                                                                        "font": "gjFont59.fnt",
+                                                                        "text": "Other",
+                                                                        "scale": 0.4,
+                                                                        "position": {
+                                                                            "anchor": "center",
+                                                                            "x": -27.5,
+                                                                            "y": 0
+                                                                        },
+                                                                        "rotation": {
+                                                                            "x": 180,
+                                                                            "y": 0
+                                                                        }
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "type": "CCSprite",
+                                                                    "id": "osu-other-iconq",
+                                                                    "attributes": {
+                                                                        "sprite": "Danz_osu_asset/exit.png",
+                                                                        "scale": 0.6,
+                                                                        "position": {
+                                                                            "anchor": "center-right",
+                                                                            "x": -40,
+                                                                            "y": 0
+                                                                        },
+                                                                        "rotation": -45
+                                                                    }
+                                                                }
+                                                            ]
+                                                        },
+                                                        "event": {
+                                                            "on-activate": {
+                                                                "attributes": {
+                                                                    "sound": "Danz_asset/sfx/menuhit.ogg"
+                                                                },
+                                                                "parent": {
+                                                                    "children": {
+                                                                        "node": {
+                                                                            "osu-other-menu": {
+                                                                                "attributes": {
+                                                                                    "visible": true,
+                                                                                    "position": {
+                                                                                        "anchor": "self",
+                                                                                        "x": -10,
+                                                                                        "y": 0
+                                                                                    },
+                                                                                    "actions": [
+                                                                                        {
+                                                                                            "type": "FadeIn",
+                                                                                            "duration": 0.2
+                                                                                        },
+                                                                                        {
+                                                                                            "type": "MoveBy",
+                                                                                            "duration": 0.1,
+                                                                                            "value": {
+                                                                                                "x": 10,
+                                                                                                "y": 0
+                                                                                            }
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            "on-hover": {
+                                                                "attributes": {
+                                                                    "sprite": "Danz_osu_asset/ui_button2_hover.png",
+                                                                    "sound": "Danz_asset/sfx/menuhover.ogg",
+                                                                    "rotation": {
+                                                                        "x": 180,
+                                                                        "y": 0
+                                                                    },
+                                                                    "actions": [
+                                                                        {
+                                                                            "type": "Sequence",
+                                                                            "actions": [
+                                                                                {
+                                                                                    "type": "MoveBy",
+                                                                                    "duration": 0.2,
+                                                                                    "value": {
+                                                                                        "x": 8,
+                                                                                        "y": 0
+                                                                                    },
+                                                                                    "easing": "BackOut"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "children": {
+                                                                    "node": {
+                                                                        "osu-Other-label": {
+                                                                            "attributes": {
+                                                                                "rotation": {
+                                                                                    "x": 180,
+                                                                                    "y": 0
+                                                                                },
+                                                                                "position": {
+                                                                                    "anchor": "center",
+                                                                                    "x": -27.5,
+                                                                                    "y": 0
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            "on-exit": {
+                                                                "attributes": {
+                                                                    "sprite": "Danz_osu_asset/ui_button2.png",
+                                                                    "rotation": {
+                                                                        "x": 180,
+                                                                        "y": 0
+                                                                    },
+                                                                    "actions": [
+                                                                        {
+                                                                            "type": "MoveBy",
+                                                                            "duration": 0.2,
+                                                                            "value": {
+                                                                                "x": -8,
+                                                                                "y": 0
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "children": {
+                                                                    "node": {
+                                                                        "osu-Other-label": {
+                                                                            "attributes": {
+                                                                                "rotation": {
+                                                                                    "x": 180,
+                                                                                    "y": 0
+                                                                                },
+                                                                                "position": {
+                                                                                    "anchor": "center",
+                                                                                    "x": -27.5,
+                                                                                    "y": 0
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    {
+                                                        "type": "CCMenuItemSpriteExtra",
+                                                        "id": "osu-main4",
+                                                        "attributes": {
+                                                            "sprite": "Danz_osu_asset/ui_button1.png",
+                                                            "position": {
+                                                                "anchor": "center",
+                                                                "x": 0,
+                                                                "y": -30
+                                                            },
+                                                            "rotation": {
+                                                                "x": 180,
+                                                                "y": 0
+                                                            }
+                                                        },
+                                                        "children": {
+                                                            "new": [
+                                                                {
+                                                                    "type": "CCLabelBMFont",
+                                                                    "id": "osu-exit-label",
+                                                                    "attributes": {
+                                                                        "font": "gjFont59.fnt",
+                                                                        "text": "Exit",
+                                                                        "scale": 0.4,
+                                                                        "position": {
+                                                                            "anchor": "center",
+                                                                            "x": -27.5,
+                                                                            "y": 0
+                                                                        },
+                                                                        "rotation": {
+                                                                            "x": 180,
+                                                                            "y": 0
+                                                                        }
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "type": "CCSprite",
+                                                                    "id": "osu-exit-icon",
+                                                                    "attributes": {
+                                                                        "sprite": "Danz_osu_asset/exit.png",
+                                                                        "scale": 0.6,
+                                                                        "position": {
+                                                                            "anchor": "center-right",
+                                                                            "x": -35,
+                                                                            "y": 0
+                                                                        },
+                                                                        "rotation": {
+                                                                            "x": 180,
+                                                                            "y": 0
+                                                                        }
+                                                                    }
+                                                                }
+                                                            ]
+                                                        },
+                                                        "event": {
+                                                            "on-activate": {
+                                                                "attributes": {
+                                                                    "sound": "Danz_asset/sfx/menuhit.ogg",
+                                                                    "callback": {
+                                                                        "class": "MenuLayer",
+                                                                        "method": "onQuit"
+                                                                    }
+                                                                },
+                                                                "parent": {
+                                                                    "parent": {
+                                                                        "parent": {
+                                                                            "parent": {
+                                                                                "parent": {
+                                                                                    "children": {
+                                                                                        "query": {
+                                                                                            "FLAlertLayer > main-layer > background": {
+                                                                                                "attributes": {
+                                                                                                    "visible": false
+                                                                                                }
+                                                                                            },
+                                                                                            "FLAlertLayer > main-layer > content-text-area": {
+                                                                                                "attributes": {
+                                                                                                    "position": {
+                                                                                                        "anchor": "self",
+                                                                                                        "x": 0,
+                                                                                                        "y": 30
+                                                                                                    }
+                                                                                                }
+                                                                                            },
+                                                                                            "FLAlertLayer > main-layer > title": {
+                                                                                                "attributes": {
+                                                                                                    "position": {
+                                                                                                        "anchor": "self",
+                                                                                                        "x": 0,
+                                                                                                        "y": 30
+                                                                                                    }
+                                                                                                }
+                                                                                            },
+                                                                                            "FLAlertLayer > main-layer > main-menu > button-1": {
+                                                                                                "attributes": {
+                                                                                                    "position": {
+                                                                                                        "anchor": "bottom-left",
+                                                                                                        "x": -80,
+                                                                                                        "y": -5
+                                                                                                    },
+                                                                                                    "actions": [
+                                                                                                        {
+                                                                                                            "type": "MoveBy",
+                                                                                                            "duration": 0.4,
+                                                                                                            "value": {
+                                                                                                                "x": 80,
+                                                                                                                "y": 0
+                                                                                                            },
+                                                                                                            "easing": "BackOut"
+                                                                                                        }
+                                                                                                    ]
+                                                                                                }
+                                                                                            },
+                                                                                            "FLAlertLayer > main-layer > main-menu > button-2": {
+                                                                                                "attributes": {
+                                                                                                    "position": {
+                                                                                                        "anchor": "bottom-left",
+                                                                                                        "x": 80,
+                                                                                                        "y": 35
+                                                                                                    },
+                                                                                                    "actions": [
+                                                                                                        {
+                                                                                                            "type": "MoveBy",
+                                                                                                            "duration": 0.4,
+                                                                                                            "value": {
+                                                                                                                "x": -80,
+                                                                                                                "y": 0
+                                                                                                            },
+                                                                                                            "easing": "BackOut"
+                                                                                                        }
+                                                                                                    ]
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            "on-hover": {
+                                                                "attributes": {
+                                                                    "sprite": "Danz_osu_asset/ui_button1_hover.png",
+                                                                    "sound": "Danz_asset/sfx/menuhover.ogg",
+                                                                    "rotation": {
+                                                                        "x": 180,
+                                                                        "y": 0
+                                                                    },
+                                                                    "actions": [
+                                                                        {
+                                                                            "type": "Sequence",
+                                                                            "actions": [
+                                                                                {
+                                                                                    "type": "MoveBy",
+                                                                                    "duration": 0.2,
+                                                                                    "value": {
+                                                                                        "x": 8,
+                                                                                        "y": 0
+                                                                                    },
+                                                                                    "easing": "BackOut"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "children": {
+                                                                    "node": {
+                                                                        "osu-exit-label": {
+                                                                            "attributes": {
+                                                                                "rotation": {
+                                                                                    "x": 180,
+                                                                                    "y": 0
+                                                                                },
+                                                                                "position": {
+                                                                                    "anchor": "center",
+                                                                                    "x": -27.5,
+                                                                                    "y": 0
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            "on-exit": {
+                                                                "attributes": {
+                                                                    "sprite": "Danz_osu_asset/ui_button1.png",
+                                                                    "rotation": {
+                                                                        "x": 180,
+                                                                        "y": 0
+                                                                    },
+                                                                    "actions": [
+                                                                        {
+                                                                            "type": "MoveBy",
+                                                                            "duration": 0.2,
+                                                                            "value": {
+                                                                                "x": -8,
+                                                                                "y": 0
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "children": {
+                                                                    "node": {
+                                                                        "osu-exit-label": {
+                                                                            "attributes": {
+                                                                                "rotation": {
+                                                                                    "x": 180,
+                                                                                    "y": 0
+                                                                                },
+                                                                                "position": {
+                                                                                    "anchor": "center",
+                                                                                    "x": -27.5,
+                                                                                    "y": 0
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "type": "CCMenuItemSpriteExtra",
+                                            "id": "osu-playbutton",
+                                            "attributes": {
+                                                "sprite-frame": "GJ_playBtn_001.png",
+                                                "position": {
+                                                    "anchor": "center-left",
+                                                    "x": 160,
+                                                    "y": 0
+                                                },
+                                                "scale": 1,
+                                                "base-scale": 1
+                                            },
+                                            "event": {
+                                                "on-activate": {
+                                                    "parent": {
+                                                        "children": {
+                                                            "node": {
+                                                                "osu-menu": {
+                                                                    "attributes": {
+                                                                        "visible": true
+                                                                    },
+                                                                    "children": {
+                                                                        "node": {
+                                                                            "osu-main1": {
+                                                                                "attributes": {
+                                                                                    "actions": [
+                                                                                        {
+                                                                                            "type": "MoveBy",
+                                                                                            "duration": 0.2,
+                                                                                            "value": {
+                                                                                                "x": 80,
+                                                                                                "y": 0
+                                                                                            }
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            },
+                                                                            "osu-main2": {
+                                                                                "attributes": {
+                                                                                    "actions": [
+                                                                                        {
+                                                                                            "type": "MoveBy",
+                                                                                            "duration": 0.2,
+                                                                                            "value": {
+                                                                                                "x": 80,
+                                                                                                "y": 0
+                                                                                            }
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            },
+                                                                            "osu-main3": {
+                                                                                "attributes": {
+                                                                                    "actions": [
+                                                                                        {
+                                                                                            "type": "MoveBy",
+                                                                                            "duration": 0.2,
+                                                                                            "value": {
+                                                                                                "x": -80,
+                                                                                                "y": 0
+                                                                                            }
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            },
+                                                                            "osu-main4": {
+                                                                                "attributes": {
+                                                                                    "actions": [
+                                                                                        {
+                                                                                            "type": "MoveBy",
+                                                                                            "duration": 0.2,
+                                                                                            "value": {
+                                                                                                "x": -80,
+                                                                                                "y": 0
+                                                                                            }
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                },
+                                                                "osu-playbutton": {
+                                                                    "attributes": {
+                                                                        "visible": false
+                                                                    }
+                                                                },
+                                                                "osu-sprite": {
+                                                                    "attributes": {
+                                                                        "visible": true
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "on-hover": {
+                                                    "attributes": {
+                                                        "actions": [
+                                                            {
+                                                                "type": "ScaleTo",
+                                                                "duration": 0.1,
+                                                                "value": 1.25
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "on-exit": {
+                                                    "attributes": {
+                                                        "actions": [
+                                                            {
+                                                                "type": "ScaleTo",
+                                                                "duration": 0.1,
+                                                                "value": 1.2
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "type": "CCSprite",
+                                            "id": "osu-sprite",
+                                            "attributes": {
+                                                "sprite": "Danz_osu_asset/geosu_logo.png",
+                                                "scale": 1.2,
+                                                "position": {
+                                                    "anchor": "center",
+                                                    "x": 0,
+                                                    "y": 0
+                                                },
+                                                "visible": false,
+                                                "z-order": 3
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                }
+            ],
+            "node": {
+                "bottom-menu": {
+                    "attributes": {
+                        "update-layout": "self",
+                        "actions": [
+                            {
+                                "type": "MoveBy",
+                                "duration": 0,
+                                "value": {
+                                    "x": -150,
+                                    "y": 0
+                                }
+                            },
+                            {
+                                "type": "MoveBy",
+                                "duration": 0.4,
+                                "value": {
+                                    "x": 150,
+                                    "y": 0
+                                },
+                                "easing": "BackOut"
+                            }
+                        ]
+                    }
+                },
+                "profile-menu": {
+                    "attributes": {
+                        "actions": [
+                            {
+                                "type": "MoveBy",
+                                "duration": 0,
+                                "value": {
+                                    "x": 0,
+                                    "y": 80
+                                }
+                            },
+                            {
+                                "type": "MoveBy",
+                                "duration": 0.3,
+                                "value": {
+                                    "x": 0,
+                                    "y": -80
+                                },
+                                "easing": "BackOut"
+                            }
+                        ]
+                    }
+                },
+                "player-username": {
+                    "attributes": {
+                        "actions": [
+                            {
+                                "type": "MoveBy",
+                                "duration": 0,
+                                "value": {
+                                    "x": 0,
+                                    "y": 80
+                                }
+                            },
+                            {
+                                "type": "MoveBy",
+                                "duration": 0.3,
+                                "value": {
+                                    "x": 0,
+                                    "y": -80
+                                },
+                                "easing": "BackOut"
+                            }
+                        ]
+                    }
+                },
+                "right-side-menu": {
+                    "attributes": {
+                        "actions": [
+                            {
+                                "type": "MoveBy",
+                                "duration": 0,
+                                "value": {
+                                    "x": 150,
+                                    "y": 0
+                                }
+                            },
+                            {
+                                "type": "MoveBy",
+                                "duration": 0.4,
+                                "value": {
+                                    "x": -150,
+                                    "y": 0
+                                },
+                                "easing": "BackOut"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

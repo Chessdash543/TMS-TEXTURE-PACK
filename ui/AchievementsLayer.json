@@ -1,0 +1,11 @@
+{
+    "children": {
+        "query": {
+            "main-layer > background": {
+                "attributes": {
+                    "color": "#00000000"
+                }
+            }
+        }
+    }
+}

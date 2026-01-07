@@ -1,0 +1,15 @@
+{
+    "children": {
+        "node": {
+            "server-frame": {
+                "attributes": {
+                    "color": {
+                        "r": 54,
+                        "g": 51,
+                        "b": 51
+                    }
+                }
+            }
+        }
+    }
+}

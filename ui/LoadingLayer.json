@@ -1,0 +1,16 @@
+{
+    "children": {
+        "node": {
+            "cocos2d-logo": {
+                "attributes": {
+                    "visible": false
+                }
+            },
+            "fmod-logo": {
+                "attributes": {
+                    "visible": false
+                }
+            }
+        }
+    }
+}
