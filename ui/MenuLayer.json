@@ -70,15 +70,6 @@
                         "flip-axis": true
                     },
                     "update-layout": "self"
-                },
-                "children": {
-                    "node": {
-                        "settings-button": {
-                            "attributes": {
-                                "remove": true
-                            }
-                        }
-                    }
                 }
             },
             "right-side-menu": {
@@ -101,19 +92,6 @@
             }
         },
         "new": [
-            {
-                "type": "CCMenu",
-                "id": "geode-bottom",
-                "attributes": {
-                    "ignore-anchor-pos": false,
-                    "z-order": 1,
-                    "position": {
-                        "anchor": "center",
-                        "x": 0,
-                        "y": 0
-                    }
-                }
-            },
             {
                 "type": "CCMenu",
                 "id": "tms-info-menu",
@@ -160,83 +138,6 @@
                     ]
                 }
             }
-        ],
-        "move": [
-            {
-                "node": "bottom-menu > geode.loader/geode-button",
-                "parent": "{id}/geode-bottom",
-                "attributes": {
-                    "position": {
-                        "anchor": "bottom-center",
-                        "x": 0,
-                        "y": 25
-                    },
-                    "sprite": "Danz_osu_asset/circle.png",
-                    "scale": 0.6
-                },
-                "children": {
-                    "index": [
-                        {
-                            "type": "CircleButtonSprite",
-                            "attributes": {
-                                "position": {
-                                    "anchor": "center",
-                                    "x": 0,
-                                    "y": 0
-                                },
-                                "visible": true
-                            },
-                            "children": {
-                                "index": [
-                                    {
-                                        "type": "CCSprite",
-                                        "index": 0,
-                                        "attributes": {
-                                            "visible": false
-                                        }
-                                    }
-                                ],
-                                "node": {
-                                    "updates-available": {
-                                        "attributes": {
-                                            "position": {
-                                                "anchor": "center",
-                                                "x": 12,
-                                                "y": 14
-                                            },
-                                            "scale": 0.4
-                                        }
-                                    },
-                                    "errors-found": {
-                                        "attributes": {
-                                            "position": {
-                                                "anchor": "center",
-                                                "x": 12,
-                                                "y": 14
-                                            },
-                                            "scale": 0.4
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    ],
-                    "new": [
-                        {
-                            "type": "CCSprite",
-                            "id": "geode-sprite",
-                            "attributes": {
-                                "sprite": "Danz_osu_asset/geode_logo.png",
-                                "position": {
-                                    "anchor": "center",
-                                    "x": 0,
-                                    "y": 0
-                                }
-                            }
-                        }
-                    ]
-                }
-            }
         ]
     },
     "after-transition": {
@@ -244,7 +145,7 @@
             "new": [
                 {
                     "type": "CCMenu",
-                    "id": "osu-main",
+                    "id": "tms-main",
                     "attributes": {
                         "ignore-anchor-pos": false,
                         "z-order": 1,
@@ -262,7 +163,7 @@
                         "new": [
                             {
                                 "type": "CCMenu",
-                                "id": "osu-play",
+                                "id": "tms-play",
                                 "attributes": {
                                     "ignore-anchor-pos": false,
                                     "z-order": 1,
@@ -280,7 +181,7 @@
                                     "new": [
                                         {
                                             "type": "CCMenu",
-                                            "id": "osu-menu",
+                                            "id": "tms-main-menu",
                                             "attributes": {
                                                 "ignore-anchor-pos": false,
                                                 "z-order": 2,
@@ -299,47 +200,42 @@
                                                 "new": [
                                                     {
                                                         "type": "CCMenuItemSpriteExtra",
-                                                        "id": "main-levels-btn",
+                                                        "id": "tms-creator",
                                                         "attributes": {
-                                                            "sprite": "TMS_asset/osu_ui.png",
+                                                            "sprite": "TMS_asset/button.png",
                                                             "position": {
                                                                 "anchor": "center",
-                                                                "x": 100,
-                                                                "y": 30
-                                                            },
-                                                            "scale": {
-                                                                "x": 1.05,
-                                                                "y": 1.9
+                                                                "x": 40,
+                                                                "y": 28
                                                             }
                                                         },
                                                         "children": {
                                                             "new": [
                                                                 {
                                                                     "type": "CCLabelBMFont",
-                                                                    "id": "osu-play-label",
+                                                                    "id": "tms-creator-label",
                                                                     "attributes": {
                                                                         "font": "gjFont59.fnt",
-                                                                        "text": "Play",
+                                                                        "text": "Creator",
                                                                         "scale": 0.4,
                                                                         "position": {
                                                                             "anchor": "center",
-                                                                            "x": -27.5,
+                                                                            "x": -20.5,
                                                                             "y": 0
                                                                         }
                                                                     }
                                                                 },
                                                                 {
                                                                     "type": "CCSprite",
-                                                                    "id": "osu-play-icon",
+                                                                    "id": "tms-creator-icon",
                                                                     "attributes": {
-                                                                        "sprite-frame": "edit_upBtn_001.png",
-                                                                        "scale": 0.8,
+                                                                        "sprite": "TMS_asset/creator_point.png",
+                                                                        "scale": 0.5,
                                                                         "position": {
                                                                             "anchor": "center-right",
                                                                             "x": -35,
                                                                             "y": 0
-                                                                        },
-                                                                        "rotation": 90
+                                                                        }
                                                                     }
                                                                 }
                                                             ]
@@ -347,7 +243,6 @@
                                                         "event": {
                                                             "on-activate": {
                                                                 "attributes": {
-                                                                    "sound": "Danz_asset/sfx/menuhit.ogg",
                                                                     "callback": {
                                                                         "class": "MenuLayer",
                                                                         "method": "onCreator"
@@ -356,7 +251,7 @@
                                                                 "parent": {
                                                                     "children": {
                                                                         "node": {
-                                                                            "osu-play-menu": {
+                                                                            "tms-main-menu": {
                                                                                 "attributes": {
                                                                                     "visible": true,
                                                                                     "position": {
@@ -386,8 +281,6 @@
                                                             },
                                                             "on-hover": {
                                                                 "attributes": {
-                                                                    "sprite": "Danz_osu_asset/ui_button1_hover.png",
-                                                                    "sound": "Danz_asset/sfx/menuhover.ogg",
                                                                     "actions": [
                                                                         {
                                                                             "type": "Sequence",
@@ -396,7 +289,7 @@
                                                                                     "type": "MoveBy",
                                                                                     "duration": 0.2,
                                                                                     "value": {
-                                                                                        "x": 8,
+                                                                                        "x": 5,
                                                                                         "y": 0
                                                                                     },
                                                                                     "easing": "BackOut"
@@ -408,13 +301,12 @@
                                                             },
                                                             "on-exit": {
                                                                 "attributes": {
-                                                                    "sprite": "Danz_osu_asset/ui_button1.png",
                                                                     "actions": [
                                                                         {
                                                                             "type": "MoveBy",
                                                                             "duration": 0.1,
                                                                             "value": {
-                                                                                "x": -8,
+                                                                                "x": -5,
                                                                                 "y": 0
                                                                             }
                                                                         }
@@ -425,17 +317,13 @@
                                                     },
                                                     {
                                                         "type": "CCMenuItemSpriteExtra",
-                                                        "id": "saved",
+                                                        "id": "tms-online",
                                                         "attributes": {
-                                                            "sprite-frame": "TMS_asset/osu_ui.png",
+                                                            "sprite-frame": "TMS_asset/button.png",
                                                             "position": {
                                                                 "anchor": "center",
-                                                                "x": 100,
-                                                                "y": -30
-                                                            },
-                                                            "scale": {
-                                                                "x": 1.05,
-                                                                "y": 1.9
+                                                                "x": 40,
+                                                                "y": -28
                                                             },
                                                             "rotation": {
                                                                 "x": 180,
@@ -446,27 +334,35 @@
                                                             "new": [
                                                                 {
                                                                     "type": "CCLabelBMFont",
-                                                                    "id": "osu-edit-label",
+                                                                    "id": "search-label",
                                                                     "attributes": {
                                                                         "font": "gjFont59.fnt",
-                                                                        "text": "Editor",
+                                                                        "text": "Search",
                                                                         "scale": 0.4,
                                                                         "position": {
                                                                             "anchor": "center",
-                                                                            "x": -27.5,
+                                                                            "x": -20.5,
+                                                                            "y": 0
+                                                                        },
+                                                                        "rotation": {
+                                                                            "x": 180,
                                                                             "y": 0
                                                                         }
                                                                     }
                                                                 },
                                                                 {
                                                                     "type": "CCSprite",
-                                                                    "id": "osu-edit-icon",
+                                                                    "id": "online-icon",
                                                                     "attributes": {
-                                                                        "sprite": "Danz_osu_asset/creator_point.png",
-                                                                        "scale": 0.4,
+                                                                        "sprite-frame": "TMS_asset/online.png",
+                                                                        "scale": 0.5,
                                                                         "position": {
                                                                             "anchor": "center-right",
-                                                                            "x": -40,
+                                                                            "x": -32,
+                                                                            "y": 0
+                                                                        },
+                                                                        "rotation": {
+                                                                            "x": 180,
                                                                             "y": 0
                                                                         }
                                                                     }
@@ -476,17 +372,14 @@
                                                         "event": {
                                                             "on-activate": {
                                                                 "attributes": {
-                                                                    "sound": "Danz_asset/sfx/menuhit.ogg",
                                                                     "callback": {
                                                                         "class": "CreatorLayer",
-                                                                        "method": "onMyLevels"
+                                                                        "method": "onOnlineLevels"
                                                                     }
                                                                 }
                                                             },
                                                             "on-hover": {
                                                                 "attributes": {
-                                                                    "sprite": "Danz_osu_asset/ui_button2_hover.png",
-                                                                    "sound": "Danz_asset/sfx/menuhover.ogg",
                                                                     "actions": [
                                                                         {
                                                                             "type": "Sequence",
@@ -495,7 +388,7 @@
                                                                                     "type": "MoveBy",
                                                                                     "duration": 0.2,
                                                                                     "value": {
-                                                                                        "x": 8,
+                                                                                        "x": 5,
                                                                                         "y": 0
                                                                                     },
                                                                                     "easing": "BackOut"
@@ -507,13 +400,12 @@
                                                             },
                                                             "on-exit": {
                                                                 "attributes": {
-                                                                    "sprite": "Danz_osu_asset/ui_button2.png",
                                                                     "actions": [
                                                                         {
                                                                             "type": "MoveBy",
                                                                             "duration": 0.1,
                                                                             "value": {
-                                                                                "x": -8,
+                                                                                "x": -5,
                                                                                 "y": 0
                                                                             }
                                                                         }
@@ -524,105 +416,106 @@
                                                     },
                                                     {
                                                         "type": "CCMenuItemSpriteExtra",
-                                                        "id": "editor",
+                                                        "id": "tms-main-level",
                                                         "attributes": {
-                                                            "sprite": "TMS_asset/osu_ui.png",
+                                                            "sprite": "TMS_asset/button.png",
                                                             "position": {
                                                                 "anchor": "center",
-                                                                "x": -100,
-                                                                "y": 30
+                                                                "x": -40,
+                                                                "y": 28
                                                             },
                                                             "rotation": {
                                                                 "x": 0,
                                                                 "y": 180
-                                                            },
-                                                            "scale": {
-                                                                "x": 1.05,
-                                                                "y": 1.9
                                                             }
                                                         },
                                                         "children": {
                                                             "new": [
                                                                 {
                                                                     "type": "CCLabelBMFont",
-                                                                    "id": "osu-Other-label",
+                                                                    "id": "tms-main-level-label",
                                                                     "attributes": {
                                                                         "font": "gjFont59.fnt",
-                                                                        "text": "Other",
+                                                                        "text": "Main Levels",
                                                                         "scale": 0.4,
                                                                         "position": {
                                                                             "anchor": "center",
-                                                                            "x": -27.5,
+                                                                            "x": -7.5,
                                                                             "y": 0
                                                                         },
                                                                         "rotation": {
-                                                                            "x": 180,
-                                                                            "y": 0
+                                                                            "x": 0,
+                                                                            "y": 180
                                                                         }
                                                                     }
                                                                 },
                                                                 {
                                                                     "type": "CCSprite",
-                                                                    "id": "osu-other-iconq",
+                                                                    "id": "main-level-icon",
                                                                     "attributes": {
-                                                                        "sprite": "Danz_osu_asset/exit.png",
-                                                                        "scale": 0.6,
+                                                                        "sprite": "TMS_asset/main_icon.png",
+                                                                        "scale": 1,
                                                                         "position": {
                                                                             "anchor": "center-right",
-                                                                            "x": -40,
+                                                                            "x": -35,
                                                                             "y": 0
-                                                                        },
-                                                                        "rotation": -45
+                                                                        }
                                                                     }
                                                                 }
                                                             ]
+                                                        },
+                                                        "event": {
+                                                            "on-activate": {
+                                                                "attributes": {
+                                                                    "callback": {
+                                                                        "class": "MenuLayer",
+                                                                        "method": "onPlay"
+                                                                    }
+                                                                }
+                                                            }
                                                         }
                                                     },
                                                     {
                                                         "type": "CCMenuItemSpriteExtra",
-                                                        "id": "ecit",
+                                                        "id": "tms-icons",
                                                         "attributes": {
-                                                            "sprite": "TMS_asset/osu_ui.png",
+                                                            "sprite": "TMS_asset/button.png",
                                                             "position": {
                                                                 "anchor": "center",
-                                                                "x": -100,
-                                                                "y": -30
+                                                                "x": -40,
+                                                                "y": -28
                                                             },
                                                             "rotation": {
                                                                 "x": 180,
                                                                 "y": 180
-                                                            },
-                                                            "scale": {
-                                                                "x": 1.05,
-                                                                "y": 1.9
                                                             }
                                                         },
                                                         "children": {
                                                             "new": [
                                                                 {
                                                                     "type": "CCLabelBMFont",
-                                                                    "id": "osu-exit-label",
+                                                                    "id": "tms-icon-label",
                                                                     "attributes": {
                                                                         "font": "gjFont59.fnt",
-                                                                        "text": "Exit",
+                                                                        "text": "icon",
                                                                         "scale": 0.4,
                                                                         "position": {
                                                                             "anchor": "center",
-                                                                            "x": -27.5,
+                                                                            "x": -15.5,
                                                                             "y": 0
                                                                         },
                                                                         "rotation": {
                                                                             "x": 180,
-                                                                            "y": 0
+                                                                            "y": 180
                                                                         }
                                                                     }
                                                                 },
                                                                 {
                                                                     "type": "CCSprite",
-                                                                    "id": "osu-exit-icon",
+                                                                    "id": "exit-icon",
                                                                     "attributes": {
-                                                                        "sprite": "Danz_osu_asset/exit.png",
-                                                                        "scale": 0.6,
+                                                                        "sprite": "TMS_asset/exit.png",
+                                                                        "scale": 1,
                                                                         "position": {
                                                                             "anchor": "center-right",
                                                                             "x": -35,
@@ -635,6 +528,16 @@
                                                                     }
                                                                 }
                                                             ]
+                                                        },
+                                                        "event": {
+                                                            "on-activate": {
+                                                                "attributes": {
+                                                                    "callback": {
+                                                                        "class": "MenuLayer",
+                                                                        "method": "onGarage"
+                                                                    }
+                                                                }
+                                                            }
                                                         }
                                                     }
                                                 ]
@@ -642,7 +545,7 @@
                                         },
                                         {
                                             "type": "CCMenuItemSpriteExtra",
-                                            "id": "osu-playbutton",
+                                            "id": "tms-playbutton",
                                             "attributes": {
                                                 "sprite-frame": "GJ_playBtn_001.png",
                                                 "position": {
@@ -658,62 +561,62 @@
                                                     "parent": {
                                                         "children": {
                                                             "node": {
-                                                                "osu-menu": {
+                                                                "tms-main-menu": {
                                                                     "attributes": {
                                                                         "visible": true
                                                                     },
                                                                     "children": {
                                                                         "node": {
-                                                                            "osu-main1": {
+                                                                            "tms-creator": {
                                                                                 "attributes": {
                                                                                     "actions": [
                                                                                         {
                                                                                             "type": "MoveBy",
                                                                                             "duration": 0.2,
                                                                                             "value": {
-                                                                                                "x": 80,
+                                                                                                "x": 60,
                                                                                                 "y": 0
                                                                                             }
                                                                                         }
                                                                                     ]
                                                                                 }
                                                                             },
-                                                                            "osu-main2": {
+                                                                            "tms-online": {
                                                                                 "attributes": {
                                                                                     "actions": [
                                                                                         {
                                                                                             "type": "MoveBy",
-                                                                                            "duration": 0.2,
+                                                                                            "duration": 0.23,
                                                                                             "value": {
-                                                                                                "x": 80,
+                                                                                                "x": 60,
                                                                                                 "y": 0
                                                                                             }
                                                                                         }
                                                                                     ]
                                                                                 }
                                                                             },
-                                                                            "osu-main3": {
+                                                                            "tms-main-level": {
                                                                                 "attributes": {
                                                                                     "actions": [
                                                                                         {
                                                                                             "type": "MoveBy",
-                                                                                            "duration": 0.2,
+                                                                                            "duration": 0.26,
                                                                                             "value": {
-                                                                                                "x": -80,
+                                                                                                "x": -60,
                                                                                                 "y": 0
                                                                                             }
                                                                                         }
                                                                                     ]
                                                                                 }
                                                                             },
-                                                                            "osu-main4": {
+                                                                            "tms-icons": {
                                                                                 "attributes": {
                                                                                     "actions": [
                                                                                         {
                                                                                             "type": "MoveBy",
-                                                                                            "duration": 0.2,
+                                                                                            "duration": 0.29,
                                                                                             "value": {
-                                                                                                "x": -80,
+                                                                                                "x": -60,
                                                                                                 "y": 0
                                                                                             }
                                                                                         }
@@ -723,12 +626,12 @@
                                                                         }
                                                                     }
                                                                 },
-                                                                "osu-playbutton": {
+                                                                "tms-playbutton": {
                                                                     "attributes": {
                                                                         "visible": false
                                                                     }
                                                                 },
-                                                                "osu-sprite": {
+                                                                "tms-sprite": {
                                                                     "attributes": {
                                                                         "visible": true
                                                                     }
@@ -763,7 +666,7 @@
                                         },
                                         {
                                             "type": "CCSprite",
-                                            "id": "osu-sprite",
+                                            "id": "tms-sprite",
                                             "attributes": {
                                                 "sprite-frame": "GJ_playBtn_001.png",
                                                 "scale": 1.2,
