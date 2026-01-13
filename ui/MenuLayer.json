@@ -230,7 +230,7 @@
                                                                     "id": "tms-creator-icon",
                                                                     "attributes": {
                                                                         "sprite": "TMS_asset/creator_point.png",
-                                                                        "scale": 0.5,
+                                                                        "scale": 0.7,
                                                                         "position": {
                                                                             "anchor": "center-right",
                                                                             "x": -35,
@@ -355,7 +355,7 @@
                                                                     "id": "online-icon",
                                                                     "attributes": {
                                                                         "sprite-frame": "TMS_asset/online.png",
-                                                                        "scale": 0.5,
+                                                                        "scale": 0.7,
                                                                         "position": {
                                                                             "anchor": "center-right",
                                                                             "x": -32,
@@ -454,7 +454,7 @@
                                                                     "id": "main-level-icon",
                                                                     "attributes": {
                                                                         "sprite": "TMS_asset/main_icon.png",
-                                                                        "scale": 1,
+                                                                        "scale": 1.2,
                                                                         "position": {
                                                                             "anchor": "center-right",
                                                                             "x": -35,
@@ -515,7 +515,7 @@
                                                                     "id": "exit-icon",
                                                                     "attributes": {
                                                                         "sprite": "TMS_asset/exit.png",
-                                                                        "scale": 1,
+                                                                        "scale": 1.2,
                                                                         "position": {
                                                                             "anchor": "center-right",
                                                                             "x": -35,
