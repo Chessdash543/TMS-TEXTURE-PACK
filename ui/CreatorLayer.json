@@ -22,6 +22,25 @@
                                     "anchor": "bottom-right",
                                     "x": -45,
                                     "y": 65
+                                },
+                                "color": "#4F4E4EFF"
+                            },
+                            "event": {
+                                "on-activate": {
+                                    "children": {
+                                        "new": [
+                                            {
+                                                "type": "Alert",
+                                                "id": "search-error",
+                                                "attributes": {
+                                                    "title": "Search Error!",
+                                                    "description": "Search Has Been Moved To The Main Menu",
+                                                    "button-text": "OK",
+                                                    "show": true
+                                                }
+                                            }
+                                        ]
+                                    }
                                 }
                             }
                         }
