@@ -30,7 +30,7 @@
                     },
                     "scale": {
                         "fit": {
-                            "relative": "screen"
+                            "relative": "screen-height"
                         }
                     },
                     "z-order": -10
