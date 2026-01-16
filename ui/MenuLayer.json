@@ -44,11 +44,20 @@
                 "attributes": {
                     "position": {
                         "anchor": "top-right",
-                        "x": -115,
-                        "y": -30
+                        "x": -155,
+                        "y": -35
+                    },
+                    "anchor-point": {
+                        "x": 0.5,
+                        "y": 0.5
+                    },
+                    "content-size": {
+                        "width": 200,
+                        "height": 50
                     },
                     "layout": {
-                        "axis-alignment": "end"
+                        "axis-alignment": "end",
+                        "axis": "row"
                     }
                 }
             },
