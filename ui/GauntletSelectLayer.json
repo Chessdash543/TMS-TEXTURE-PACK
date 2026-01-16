@@ -1,0 +1,26 @@
+{
+    "children": {
+        "node": {
+            "bottom-left-corner": {
+                "attributes": {
+                    "color": "#FFFFFFFF"
+                }
+            },
+            "bottom-right-corner": {
+                "attributes": {
+                    "color": "#FFFFFFFF"
+                }
+            },
+            "top-left-corner": {
+                "attributes": {
+                    "color": "#FFFFFFFF"
+                }
+            },
+            "top-right-corner": {
+                "attributes": {
+                    "color": "#FFFFFFFF"
+                }
+            }
+        }
+    }
+}
