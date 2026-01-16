@@ -79,6 +79,15 @@
                         "flip-axis": true
                     },
                     "update-layout": "self"
+                },
+                "children":{
+                    "node":{
+                        "newgrounds-button":{
+                            "attributes":{
+                                "visible":false
+                            }
+                        }
+                    }
                 }
             },
             "right-side-menu": {
