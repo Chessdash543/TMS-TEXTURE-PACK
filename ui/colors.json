@@ -160,26 +160,10 @@
         "g": 98,
         "b": 98
     },
-
-    "play-loading-outer": {
-        "r": 255,
-        "g": 255,
-        "b": 255
-    },
-    "play-loading-center": {
-        "r": 255,
-        "g": 255,
-        "b": 255
-    },
-    "play-loading-inner": {
-        "r": 255,
-        "g": 255,
-        "b": 255
-    },
     "play-loading-progress": {
-        "r": 255,
-        "g": 255,
-        "b": 255
+        "r": 181,
+        "g": 69,
+        "b": 20
     },
     "main-menu-bg": {
         "r": 54,
