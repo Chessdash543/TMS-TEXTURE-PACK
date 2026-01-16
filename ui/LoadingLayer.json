@@ -1,6 +1,37 @@
 {
     "children": {
+        "new": [
+            {
+                "type": "CCLabelBMFont",
+                "id": "loading-text",
+                "attributes": {
+                    "font": "gjFont59.fnt",
+                    "position": {
+                        "anchor": "center",
+                        "x": 0,
+                        "y": -60
+                    },
+                    "scale": 0.7,
+                    "text": "- Loading -"
+                }
+            }
+        ],
         "node": {
+            "bg-texture": {
+                "attributes": {
+                    "sprite": "GJ_gradientBG.png",
+                    "color": {
+                        "r": 255,
+                        "g": 255,
+                        "b": 255
+                    },
+                    "scale": {
+                        "fit": {
+                            "relative": "screen-height"
+                        }
+                    }
+                }
+            },
             "cocos2d-logo": {
                 "attributes": {
                     "visible": false
@@ -9,6 +40,46 @@
             "fmod-logo": {
                 "attributes": {
                     "visible": false
+                }
+            },
+            "geode-small-label": {
+                "attributes": {
+                    "font": "gjFont59.fnt",
+                    "position": {
+                        "anchor": "self",
+                        "x": 0,
+                        "y": 5
+                    }
+                }
+            },
+            "geode-small-label-2": {
+                "attributes": {
+                    "font": "gjFont59.fnt",
+                    "position": {
+                        "anchor": "self",
+                        "x": 0,
+                        "y": 5
+                    }
+                }
+            },
+            "robtop-logo": {
+                "attributes": {
+                }
+            },
+            "progress-slider": {
+                "attributes": {
+                    "opacity": 0,
+                    "scale": {
+                        "fit": {
+                            "relative": "screen-width",
+                            "multiplier": 1.2
+                        }
+                    },
+                    "position": {
+                        "anchor": "bottom-center",
+                        "x": 0,
+                        "y": -2
+                    }
                 }
             }
         }
