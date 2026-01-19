@@ -111,6 +111,47 @@
         },
         "new": [
             {
+                "type": "CCSprite",
+                "id": "gd-logo",
+                "attributes": {
+                    "sprite-frame": "TMS_asset/logo.png",
+                    "scale":1,
+                    "position":{
+                        "anchor":"top-center",
+                        "x":0,
+                        "y":-90
+                    },
+                    "actions":[
+                        {
+                            "type":"Sequence",
+                            "actions":[
+                                {
+                                    "type": "RotateBy",
+                                    "value": 8,
+                                    "duration": 2
+                                },
+                                {
+                                    "type": "ScaleBy",
+                                    "value": 0.95,
+                                    "duration": 1
+                                },
+                                {
+                                    "type": "RotateBy",
+                                    "value": -8,
+                                    "duration": 2
+                                },
+                                {
+                                    "type": "ScaleBy",
+                                    "value": 1.05,
+                                    "duration": 1
+                                }
+                            ],
+                            "repeat":true
+                        }
+                    ]
+                } 
+            },
+            {
                 "type": "CCMenu",
                 "id": "tms-info-menu",
                 "attributes": {
@@ -632,7 +673,7 @@
                         "position": {
                             "anchor": "center",
                             "x": 0,
-                            "y": 0
+                            "y": -50
                         }
                     },
                     "children": {
