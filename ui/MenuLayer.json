@@ -123,9 +123,9 @@
                             "type": "CCMenuItemSpriteExtra",
                             "id": "tms-button",
                             "attributes": {
-                                "sprite-frame": "GJ_infoBtn_001.png",
-                                "scale": 0.7,
-                                "base-scale": 0.7,
+                                "sprite-frame": "communityCreditsBtn_001.png",
+                                "scale": 0.85,
+                                "base-scale": 0.85,
                                 "position": {
                                     "anchor": "top-right",
                                     "x": -30,
