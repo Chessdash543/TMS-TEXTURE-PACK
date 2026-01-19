@@ -142,7 +142,7 @@
                                                 "attributes": {
                                                     "sprite": "GJ_square01.png",
                                                     "popup-size": {
-                                                        "width": 250,
+                                                        "width": 335,
                                                         "height": 180
                                                     },
                                                     "title": "Contributor",
@@ -150,6 +150,38 @@
                                                 },
                                                 "children": {
                                                     "new": [
+                                                        {
+                                                            "type": "CCSprite",
+                                                            "id": "tms-sprite",
+                                                            "attributes": {
+                                                                "sprite-frame":"TMS_asset/tms.png",
+                                                                "scale": 1.3,
+                                                                "position": {
+                                                                    "anchor": "center-left",
+                                                                    "x": 75,
+                                                                    "y": 10
+                                                                },
+                                                                "visible":true
+                                                            },
+                                                            "children":{
+                                                                "new":[
+                                                                    {
+                                                                        "type": "CCLabelBMFont",
+                                                                        "id": "tms-label",
+                                                                        "attributes": {
+                                                                            "font": "gjFont59.fnt",
+                                                                            "text": "TMS Texture Pack",
+                                                                            "scale": 0.4,
+                                                                            "position": {
+                                                                                "anchor": "center",
+                                                                                "x": 0,
+                                                                                "y": -55
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
                                                         {
                                                             "type": "CCMenu",
                                                             "id": "tms-menu-info",
@@ -162,7 +194,7 @@
                                                                     "y": 0
                                                                 },
                                                                 "content-size": {
-                                                                    "width": 250,
+                                                                    "width": 335,
                                                                     "height": 180
                                                                 }
                                                             },
@@ -174,9 +206,9 @@
                                                                         "attributes": {
                                                                             "sprite": "TMS_asset/credits_icon/chessdash.png",
                                                                             "position": {
-                                                                                "anchor": "center",
-                                                                                "x": -50,
-                                                                                "y": 20
+                                                                                "anchor": "top-center",
+                                                                                "x": 20,
+                                                                                "y": -70
                                                                             }
                                                                         },
                                                                         "children": {
@@ -274,9 +306,9 @@
                                                                         "attributes": {
                                                                             "sprite": "TMS_asset/credits_icon/danzgame.png",
                                                                             "position": {
-                                                                                "anchor": "center",
-                                                                                "x": 50,
-                                                                                "y": 20
+                                                                                "anchor": "top-right",
+                                                                                "x": -60,
+                                                                                "y": -70
                                                                             }
                                                                         },
                                                                         "children": {
@@ -374,9 +406,9 @@
                                                                         "attributes": {
                                                                             "sprite": "TMS_asset/credits_icon/onlyyoichi.png",
                                                                             "position": {
-                                                                                "anchor": "center",
-                                                                                "x": -50,
-                                                                                "y": -45
+                                                                                "anchor": "bottom-center",
+                                                                                "x": 20,
+                                                                                "y": 45
                                                                             }
                                                                         },
                                                                         "children": {
@@ -474,9 +506,9 @@
                                                                         "attributes": {
                                                                             "sprite": "TMS_asset/credits_icon/MartyMcForty.png",
                                                                             "position": {
-                                                                                "anchor": "center",
-                                                                                "x": 50,
-                                                                                "y": -45
+                                                                                "anchor": "bottom-right",
+                                                                                "x": -60,
+                                                                                "y": 45
                                                                             }
                                                                         },
                                                                         "children": {
