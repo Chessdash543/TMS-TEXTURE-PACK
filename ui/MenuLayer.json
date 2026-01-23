@@ -115,40 +115,12 @@
                 "id": "gd-logo",
                 "attributes": {
                     "sprite-frame": "GJ_logo_001.png",
-                    "scale":2,
+                    "scale":1,
                     "position":{
                         "anchor":"top-center",
                         "x":0,
-                        "y":-60
-                    },
-                    "actions":[
-                        {
-                            "type":"Sequence",
-                            "actions":[
-                                {
-                                    "type": "RotateTo",
-                                    "value": 6,
-                                    "duration": 2
-                                },
-                                {
-                                    "type": "ScaleTo",
-                                    "value": 1.9,
-                                    "duration": 2
-                                },
-                                {
-                                    "type": "RotateTo",
-                                    "value": -6,
-                                    "duration": 2
-                                },
-                                {
-                                    "type": "ScaleTo",
-                                    "value": 2.1,
-                                    "duration": 2
-                                }
-                            ],
-                            "repeat":true
-                        }
-                    ]
+                        "y":-100
+                    }
                 } 
             },
             {
