@@ -109,41 +109,41 @@
                 }
             }
         },
-        "new": [
+        "new":[
             {
                 "type": "CCSprite",
                 "id": "gd-logo",
                 "attributes": {
-                    "sprite-frame": "TMS_asset/logo.png",
-                    "scale":1,
+                    "sprite-frame": "GJ_logo_001.png",
+                    "scale":2,
                     "position":{
                         "anchor":"top-center",
                         "x":0,
-                        "y":-90
+                        "y":-60
                     },
                     "actions":[
                         {
                             "type":"Sequence",
                             "actions":[
                                 {
-                                    "type": "RotateBy",
-                                    "value": 8,
+                                    "type": "RotateTo",
+                                    "value": 6,
                                     "duration": 2
                                 },
                                 {
-                                    "type": "ScaleBy",
-                                    "value": 0.95,
-                                    "duration": 1
-                                },
-                                {
-                                    "type": "RotateBy",
-                                    "value": -8,
+                                    "type": "ScaleTo",
+                                    "value": 1.9,
                                     "duration": 2
                                 },
                                 {
-                                    "type": "ScaleBy",
-                                    "value": 1.05,
-                                    "duration": 1
+                                    "type": "RotateTo",
+                                    "value": -6,
+                                    "duration": 2
+                                },
+                                {
+                                    "type": "ScaleTo",
+                                    "value": 2.1,
+                                    "duration": 2
                                 }
                             ],
                             "repeat":true
