@@ -239,6 +239,19 @@
                                                                                             "y": 30
                                                                                         }
                                                                                     }
+                                                                                },
+                                                                                {
+                                                                                    "type": "CCSprite",
+                                                                                    "id": "chessdash-flag",
+                                                                                    "attributes": {
+                                                                                        "sprite": "TMS_asset/flags/br.png",
+                                                                                        "scale": 0.35,
+                                                                                        "position": {
+                                                                                            "anchor": "bottom-right",
+                                                                                            "x": 0,
+                                                                                            "y": 0
+                                                                                        }
+                                                                                    }
                                                                                 }
                                                                             ]
                                                                         },
@@ -337,6 +350,19 @@
                                                                                             "anchor": "center",
                                                                                             "x": 0,
                                                                                             "y": 30
+                                                                                        }
+                                                                                    }
+                                                                                },
+                                                                                {
+                                                                                    "type": "CCSprite",
+                                                                                    "id": "chessdash-flag",
+                                                                                    "attributes": {
+                                                                                        "sprite": "TMS_asset/flags/id.png",
+                                                                                        "scale": 0.35,
+                                                                                        "position": {
+                                                                                            "anchor": "bottom-right",
+                                                                                            "x": 0,
+                                                                                            "y": 0
                                                                                         }
                                                                                     }
                                                                                 }
@@ -439,6 +465,19 @@
                                                                                             "y": 30
                                                                                         }
                                                                                     }
+                                                                                },
+                                                                                {
+                                                                                    "type": "CCSprite",
+                                                                                    "id": "chessdash-flag",
+                                                                                    "attributes": {
+                                                                                        "sprite": "TMS_asset/flags/ve.png",
+                                                                                        "scale": 0.35,
+                                                                                        "position": {
+                                                                                            "anchor": "bottom-right",
+                                                                                            "x": 0,
+                                                                                            "y": 0
+                                                                                        }
+                                                                                    }
                                                                                 }
                                                                             ]
                                                                         },
@@ -537,6 +576,19 @@
                                                                                             "anchor": "center",
                                                                                             "x": 0,
                                                                                             "y": 30
+                                                                                        }
+                                                                                    }
+                                                                                },
+                                                                                {
+                                                                                    "type": "CCSprite",
+                                                                                    "id": "chessdash-flag",
+                                                                                    "attributes": {
+                                                                                        "sprite": "TMS_asset/flags/us.png",
+                                                                                        "scale": 0.35,
+                                                                                        "position": {
+                                                                                            "anchor": "bottom-right",
+                                                                                            "x": 0,
+                                                                                            "y": 0
                                                                                         }
                                                                                     }
                                                                                 }
