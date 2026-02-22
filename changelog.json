@@ -1,0 +1,8 @@
+{
+    "1.0.3": [
+        "Ported Geode Api Sheet to 5.0.0-beta.4",
+        "Change Letter P on pack.json",
+        "Added changelog.json",
+        "Added git workflow for changelog"
+    ]
+}
