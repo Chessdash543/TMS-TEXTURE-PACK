@@ -4,5 +4,8 @@
         "Change Letter P on pack.json",
         "Added changelog.json",
         "Added git workflow for changelog"
+    ],
+    "1.0.4":[
+        "Fixed Flags Sizes"
     ]
 }
